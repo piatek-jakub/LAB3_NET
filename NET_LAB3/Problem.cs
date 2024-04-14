@@ -30,14 +30,14 @@ namespace NET_LAB3
         public void RandomizeMatrix()
         {
             Random random = new Random(seed);
-            int width = random.Next(1990,2010);
-            int height = random.Next(1990, 2010);
+            int width = random.Next(490,510);
+            int height = random.Next(490, 510);
             for(int i=0; i<numberOfMatrices; ++i)
             {
                 Matrix matrix = new Matrix(height,width);
                 matrixList.Add(matrix);
                 height = width;
-                width = random.Next(1990, 2010);
+                width = random.Next(490, 510);
             }
 
             foreach (Matrix matrixObject in matrixList)
